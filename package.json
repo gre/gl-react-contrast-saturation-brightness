@@ -1,6 +1,6 @@
 {
   "name": "gl-react-contrast-saturation-brightness",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Universal gl-react which combines Contrast, Saturation and Brightness effects",
   "main": "lib/index.js",
   "scripts": {
