@@ -1,8 +1,6 @@
 const GL = require("gl-react");
 const React = require("react");
-const {
-  PropTypes
-} = React;
+const PropTypes = require("prop-types");
 
 const shaders = GL.Shaders.create({
   Saturate: {

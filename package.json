@@ -34,5 +34,8 @@
   "bugs": {
     "url": "https://github.com/gre/gl-react-contrast-saturation-brightness/issues"
   },
-  "homepage": "https://github.com/gre/gl-react-contrast-saturation-brightness#readme"
+  "homepage": "https://github.com/gre/gl-react-contrast-saturation-brightness#readme",
+  "dependencies": {
+    "prop-types": "^15.6.0"
+  }
 }
