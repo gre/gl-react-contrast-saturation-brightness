@@ -1,4 +1,4 @@
-# gl-react-contrast-saturation-brightness ![](https://img.shields.io/npm/v/gl-react-contrast-saturation-brightness.svg) ![](https://img.shields.io/badge/gl--react->= 2.1-05F561.svg) ![](https://img.shields.io/badge/gl--react-dom%20%7C%20native-f90.svg)
+# gl-react-contrast-saturation-brightness ![](https://img.shields.io/npm/v/gl-react-contrast-saturation-brightness.svg) ![](https://img.shields.io/badge/gl--react-~2.1-05F561.svg) ![](https://img.shields.io/badge/gl--react-dom%20%7C%20native-f90.svg)
 
 [Universal](https://projectseptemberinc.gitbooks.io/gl-react/content/docs/universal.html) gl-react **contrast-saturation-brightness effect**.
 
