@@ -1,0 +1,33 @@
+body {
+}
+.App {
+  text-align: center;
+}
+
+.App-header {
+  color: #589;
+  padding: 20px;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+label {
+  padding: 10px;
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+label input {
+  flex: 1;
+  padding: 10px;
+}
