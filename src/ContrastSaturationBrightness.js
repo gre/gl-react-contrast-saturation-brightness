@@ -1,9 +1,9 @@
-const GL = require("gl-react");
-const React = require("react");
-const PropTypes = require("prop-types");
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import { Node, Shaders } from "gl-react";
 
-const shaders = GL.Shaders.create({
-  Saturate: {
+const shaders = Shaders.create({
+  ContrastSaturationBrightness: {
     frag: `precision highp float;
 varying vec2 uv;
 uniform sampler2D t;
@@ -25,23 +25,27 @@ void main () {
   }
 });
 
-module.exports = GL.createComponent(
-  ({ children: t, contrast, saturation, brightness }) =>
-  <GL.Node
-    shader={shaders.Saturate}
-    uniforms={{ t, contrast, saturation, brightness }}
-  />,
-{
-  displayName: "Saturate",
-  defaultProps: {
-    contrast: 1,
-    saturation: 1,
-    brightness: 1
-  },
-  propTypes: {
+export class ContrastSaturationBrightness extends Component {
+  static propTypes = {
     children: PropTypes.any.isRequired,
     contrast: PropTypes.number,
     saturation: PropTypes.number,
-    brightness: PropTypes.number,
+    brightness: PropTypes.number
+  };
+
+  static defaultProps = {
+    contrast: 1,
+    saturation: 1,
+    brightness: 1
+  };
+
+  render() {
+    const { children: t, contrast, saturation, brightness } = this.props;
+    return (
+      <Node
+        shader={shaders.ContrastSaturationBrightness}
+        uniforms={{ t, contrast, saturation, brightness }}
+      />
+    );
   }
-});
+}

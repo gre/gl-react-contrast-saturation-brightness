@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "gl-react": "^2.3.1",
+    "gl-react": "^3.13.0",
     "gl-react-contrast-saturation-brightness": "file:..",
-    "gl-react-dom": "^2.2.8",
+    "gl-react-dom": "^3.13.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-scripts": "1.0.16"

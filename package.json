@@ -2,13 +2,13 @@
   "name": "gl-react-contrast-saturation-brightness",
   "version": "1.2.0",
   "description": "Universal gl-react which combines Contrast, Saturation and Brightness effects",
-  "main": "lib/index.js",
+  "main": "lib/ContrastSaturationBrightness.js",
   "scripts": {
     "compile": "rm -rf lib/ && babel --presets es2015,stage-1,react --source-maps -d lib src",
     "prepublish": "npm run compile"
   },
   "peerDependencies": {
-    "gl-react": "~2.2.0"
+    "gl-react": "3"
   },
   "devDependencies": {
     "babel-cli": "^6.4.5",
